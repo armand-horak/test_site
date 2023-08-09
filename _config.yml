@@ -33,7 +33,6 @@ minima:
   skin: dark
   social_links:
     - { platform: github,  user_url: "https://github.com/armand-horak" }
-remote_theme: jekyll/minima
 #theme: jekyll-theme-console
 #remote_theme: b2a3e8/jekyll-theme-console
 plugins:
