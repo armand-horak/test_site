@@ -28,7 +28,7 @@ The idea of the monitoring came from the inability to monitor and control differ
 <h5><i>Communication Loss Between Industrial PC and the Cloud</i></h5>
 <p>We must first ask the question what happens when the industrial PC loses connection with the cloud? As the system uses MQTT to send data to the cloud, the connection between the edge device and the cloud will not be there, thus leading to the edge device not being able to push data to the cloud. The data must heap up in temporary database in order to ensure that the undelivered data has been kept track of. As soon as the connection re-establishes, the data must be sent through and deleted from the temporary database. However, this delete function must only occur when acknowledgement on receipt has been received. This can be done by setting an MQTT variable in the MQTT engine which will publish a sparkplug message from the gateway's side.</p>
 <br>
-<p>Another issue is the one of storing the data in the database when values are backfilled with zero's. This is easy enough to send the values and their corresponding timestamps through. However, the difficult part is to </p>
-
+<p>Another issue is the one of storing the data in the database when values are backfilled with zero's. This is easy enough to send the values and their corresponding timestamps through. However, the difficult part is to manipulate the value changed or quality changed propery of the gateway to allow consequtive zeros with different timestamps to be stored upon change.</p>
+s
 
 <span>$$\infty$$<span>
